@@ -1,14 +1,360 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쓱싹 | 사무실 정기청소 전문</title>
+    <meta name="description" content="신뢰할 수 있는 사무실 정기청소 서비스, 쓱싹. 20평 이상 사무실 전문 관리, 지금 무료 견적을 받아보세요.">
+    
+    <!-- Google Fonts: Pretendard (using CDN or fallback to Noto Sans KR) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="ph-fill ph-sparkle"></i> 쓱싹
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#features">서비스 소개</a></li>
+                    <li><a href="#reviews">고객 후기</a></li>
+                    <li><a href="#pricing">요금안내</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary sm-hidden">무료 견적 받기</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+            <button class="close-menu-btn" aria-label="메뉴 닫기">
+                <i class="ph ph-x"></i>
+            </button>
+            <ul class="mobile-nav-list">
+                <li><a href="#features">서비스 소개</a></li>
+                <li><a href="#reviews">고객 후기</a></li>
+                <li><a href="#pricing">요금안내</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">무료 견적 받기</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <!-- Placeholder for high-quality office image -->
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" alt="Clean modern office" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title">당신의 공간이 달라지는 시간,<br>쓱싹</h1>
+            <p class="hero-subtitle">검증된 전문가의 정기청소,<br>지금 바로 30초 만에 무료 견적을 받아보세요.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary btn-lg">무료 견적 받기</a>
+                <div class="trust-badge">
+                    <i class="ph-fill ph-shield-check"></i> 100% A/S 보장
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">왜 쓱싹인가요?</h2>
+                <p class="section-desc">단순한 청소를 넘어, 업무 효율을 높이는 쾌적한 환경을 만듭니다.</p>
+            </div>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="ph-duotone ph-buildings"></i>
+                    </div>
+                    <h3>사무실 정기청소</h3>
+                    <p>매일 아침 상쾌한 사무실을 맞이하세요.<br>업무 효율을 높이는 쾌적함을 선물합니다.</p>
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> 바닥 먼지 제거 & 물걸레</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 쓰레기 분리수거</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 탕비실 정리 정돈</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="ph-duotone ph-door-open"></i>
+                    </div>
+                    <h3>사무실 입주 청소</h3>
+                    <p>새로운 시작을 완벽하게.<br>보이지 않는 곳까지 꼼꼼하게 살균 케어합니다.</p>
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> 창틀 & 유리창 집중 케어</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 인테리어 공사 먼지 제거</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 고온 스팀 살균</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="ph-duotone ph-arrow-u-up-left"></i>
+                    </div>
+                    <h3>사무실 퇴거 청소</h3>
+                    <p>마무리가 좋아야 다음이 있습니다.<br>까다로운 원상복구 기준을 완벽히 충족합니다.</p>
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> 원상복구 기준 맞춤 청소</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 바닥 왁스 박리 작업</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 스티커/시트지 제거</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="section trust-signals">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i class="ph-fill ph-user-check"></i>
+                    <div class="trust-text">
+                        <h3>대표 직접 관리</h3>
+                        <p>하청 없이 모든 현장을 책임집니다.</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="ph-fill ph-chart-line-up"></i>
+                    <div class="trust-text">
+                        <h3>재계약률 96.7%</h3>
+                        <p>고객 만족도가 증명합니다.</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="ph-fill ph-shield-check"></i>
+                    <div class="trust-text">
+                        <h3>불만족 시 100% A/S</h3>
+                        <p>마음에 들 때까지 책임집니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">고객 후기</h2>
+                <p class="section-desc">이미 많은 사무실이 쓱싹과 함께 변화를 경험했습니다.</p>
+            </div>
+            
+            <div class="reviews-slider-container">
+                <div class="reviews-slider">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <span class="review-date">2023.10.15</span>
+                        </div>
+                        <p class="review-text">"기존 업체가 불성실해서 바꿨는데, 정말 다릅니다. 특히 탕비실 정리가 감동이에요. 직원들도 너무 좋아합니다."</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100&h=100" alt="Customer Profile" class="author-img">
+                            <div class="author-info">
+                                <strong>김민지 팀장</strong>
+                                <span>IT 스타트업 (30평)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <span class="review-date">2023.09.22</span>
+                        </div>
+                        <p class="review-text">"입주 청소 맡겼는데 새 사무실처럼 만들어주셨어요. 바닥 왁싱 퀄리티가 대박입니다. 정기청소도 바로 계약했네요."</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100&h=100" alt="Customer Profile" class="author-img">
+                            <div class="author-info">
+                                <strong>박준형 대표</strong>
+                                <span>디자인 에이전시 (45평)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <span class="review-date">2023.11.02</span>
+                        </div>
+                        <p class="review-text">"상담부터 마무리까지 너무 친절하십니다. A/S 요청할 일도 없이 항상 완벽하게 해주시네요. 강력 추천합니다!"</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=100&h=100" alt="Customer Profile" class="author-img">
+                            <div class="author-info">
+                                <strong>이수진 매니저</strong>
+                                <span>공유 오피스 (100평)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">합리적인 가격 정책</h2>
+                <p class="section-desc">숨겨진 비용 없이 투명하게 공개합니다.</p>
+            </div>
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>구분 (평수)</th>
+                            <th>주 1회 관리</th>
+                            <th>주 2회 관리</th>
+                            <th>주 3회 관리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>~ 30평</td>
+                            <td>월 20만원~</td>
+                            <td>월 35만원~</td>
+                            <td>월 45만원~</td>
+                        </tr>
+                        <tr>
+                            <td>31평 ~ 50평</td>
+                            <td>월 30만원~</td>
+                            <td>월 50만원~</td>
+                            <td>월 65만원~</td>
+                        </tr>
+                        <tr>
+                            <td>51평 ~</td>
+                            <td colspan="3" class="highlight-cell">별도 견적 문의 (방문 무료 견적)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="pricing-note">* 부가세 별도 금액입니다. 사무실 환경에 따라 금액이 변동될 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <h2 class="section-title text-center">자주 묻는 질문</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>세금계산서 발행이 가능한가요?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>네, 가능합니다. 쓱싹은 정식 사업자 등록 업체로, 모든 거래에 대해 100% 세금계산서 발행을 원칙으로 하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>청소 시간은 언제인가요?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>고객님의 업무에 방해되지 않도록 주로 이른 아침(06:00~08:00)이나 업무 종료 후(19:00~)에 진행하며, 협의를 통해 조율 가능합니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>보안 문제는 어떻게 관리하나요?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>모든 현장 매니저는 신원 검증을 거친 정직원이며, 영업배상책임보험에 가입되어 있어 만일의 사태에도 완벽하게 대비하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>일회성 청소도 가능한가요?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>네, 가능합니다. 입주 청소나 대청소 등 일회성 서비스도 전문 팀이 투입되어 진행해 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo footer-logo">
+                    <i class="ph-fill ph-sparkle"></i> 쓱싹
+                </a>
+                <p class="footer-desc">
+                    당신의 공간을 더 가치 있게 만듭니다.<br>
+                    지금 바로 쓱싹과 함께하세요.
+                </p>
+                <div class="contact-info">
+                    <p><i class="ph-fill ph-phone"></i> 1588-1234</p>
+                    <p><i class="ph-fill ph-envelope"></i> help@sseukssak.com</p>
+                    <p><i class="ph-fill ph-map-pin"></i> 서울특별시 강남구 테헤란로 123, 4층</p>
+                </div>
+            </div>
+            
+            <div class="footer-form-wrapper">
+                <h3>무료 견적 신청하기</h3>
+                <p>30초면 충분합니다. 확인 후 10분 내로 연락드립니다.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="회사명 / 담당자 성함" required>
+                    <input type="tel" placeholder="연락처 (010-0000-0000)" required>
+                    <select required>
+                        <option value="" disabled selected>청소 종류 선택</option>
+                        <option value="regular">사무실 정기청소</option>
+                        <option value="movein">입주 청소</option>
+                        <option value="moveout">퇴거 청소</option>
+                        <option value="other">기타 문의</option>
+                    </select>
+                    <input type="number" placeholder="대략적인 평수 (예: 30)" required>
+                    <button type="submit" class="btn btn-primary btn-block">견적 요청하기</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Sseuk-ssak Cleaning Service. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-blog"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
