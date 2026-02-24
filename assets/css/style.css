@@ -1,11 +1,9 @@
 :root {
     /* Color Palette */
-    --color-primary: #0F172A;
-    /* Deep Blue: Trust, Professional */
-    --color-primary-light: #1E293B;
-    --color-accent: #10B981;
-    /* Mint Green: Clean, Fresh */
-    --color-accent-dark: #059669;
+    --color-primary: #1E3A8A; /* Oxford Blue: Strong Trust */
+    --color-primary-light: #2563EB; /* Royal Blue */
+    --color-accent: #3B82F6; /* Bright Blue: Professional & Modern */
+    --color-accent-dark: #1D4ED8; /* Deeper Blue for hover states */
     --color-text-main: #1F2937;
     /* Dark Grey for text */
     --color-text-light: #6B7280;
