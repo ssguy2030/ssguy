@@ -92,20 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Simulate form submission
+            // Note: We are NOT calling e.preventDefault() here anymore 
+            // so that Formspree can handle the actual POST request.
+            
             const btn = contactForm.querySelector('button');
             const originalText = btn.textContent;
             
             btn.textContent = '전송 중...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                alert('견적 요청이 성공적으로 전송되었습니다!\n곧 담당자가 연락드리겠습니다.');
-                contactForm.reset();
-                btn.textContent = originalText;
-                btn.disabled = false;
-            }, 1500);
+            // We don't disable the button immediately to ensure the form submits
+            // Or we could use AJAX, but simple redirect is easier for Formspree.
         });
     }
 });
