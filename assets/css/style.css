@@ -209,6 +209,10 @@ span {
     color: var(--color-accent);
 }
 
+.nav-list .btn-primary {
+    color: var(--color-white);
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
